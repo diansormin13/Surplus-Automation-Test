@@ -29,11 +29,9 @@ Mobile.tap(findTestObject('Object Repository/Register/android.widget.Button - Ag
 
 Mobile.tap(findTestObject('Object Repository/Register/android.widget.TextView - New User Registration'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Register/android.widget.Button - MENDAFTAR'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Username'), 'qer123', 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Username'), username, 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Email'), 'diansormin@gmail.com', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.setText(findTestObject('Object Repository/Register/android.widget.EditText - Email'), 'dia', 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.sendKeys(findTestObject('Object Repository/Register/android.widget.EditText - Password'), '123456qwerty')
 
@@ -41,13 +39,7 @@ Mobile.sendKeys(findTestObject('Object Repository/Register/android.widget.EditTe
 
 Mobile.tap(findTestObject('Object Repository/Register/android.widget.Button - MENDAFTAR'), 0, FailureHandling.STOP_ON_FAILURE)
 
-'Delay to input captca'
-Mobile.delay(10)
-
-Mobile.tap(findTestObject('Object Repository/Register/android.widget.TextView - SKIP'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.verifyElementText(findTestObject('Object Repository/Login/android.widget.TextView - testDian'), username)
-
+Mobile.verifyElementText(findTestObject('Object Repository/RE-Invalid/android.widget.TextView - email invalid'), 'This email address is invalid.')
 
 
 

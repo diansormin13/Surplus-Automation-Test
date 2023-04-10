@@ -18,3 +18,19 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('C:\\Users\\hp\\Downloads\\Test.apk', false)
+
+Mobile.tap(findTestObject('Object Repository/Register/android.widget.TextView - ME'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Register/android.widget.TextView - Log In'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Register/android.widget.TextView - Log In and register'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Object Repository/Register/android.widget.Button - Agree and continue'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.setText(findTestObject('Object Repository/Login/android.widget.EditText - Username or email'), 'TestDianS', 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.sendKeys(findTestObject('Object Repository/Login/android.widget.EditText - Password'), '123456')
+
+Mobile.tap(findTestObject('Object Repository/Login/android.widget.Button - SIGN IN'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementText(findTestObject('Object Repository/Gagal_Login_Tak_Terdaftar/android.widget.TextView - Akun Anda masukkan tidak ada'), 'Akun Anda masukkan tidak ada.')
