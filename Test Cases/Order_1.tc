@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>GGL_All_Invalid</name>
+   <name>Order_1</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>90161717-9aab-45a1-ae47-ba27b2c3de8e</testCaseGuid>
+   <testCaseGuid>d333acad-5c66-43dd-ba80-b49da6249946</testCaseGuid>
 </TestCaseEntity>
